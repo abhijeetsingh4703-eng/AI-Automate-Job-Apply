@@ -1,0 +1,47 @@
+{
+  "name": "ai-career-agent-backend",
+  "version": "1.0.0",
+  "description": "AI Career Agent Backend - Job Application Automation",
+  "main": "dist/server.js",
+  "scripts": {
+    "dev": "cross-env NODE_OPTIONS=--dns-result-order=ipv4first ts-node src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "seed": "cross-env NODE_OPTIONS=--dns-result-order=ipv4first ts-node src/seeds.ts",
+    "test": "jest"
+  },
+  "keywords": [
+    "job-automation",
+    "ai",
+    "career",
+    "applications"
+  ],
+  "author": "ABHIJEET SINGH",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.5.0",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^7.2.0",
+    "mongoose": "^7.8.9",
+    "multer": "^1.4.5-lts.1",
+    "playwright": "^1.40.0"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^4.17.20",
+    "@types/express-serve-static-core": "^5.1.1",
+    "@types/jest": "^29.5.5",
+    "@types/jsonwebtoken": "^9.0.5",
+    "@types/multer": "^2.1.0",
+    "@types/node": "^20.8.0",
+    "cross-env": "^10.1.0",
+    "jest": "^29.7.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  }
+}
